@@ -4,7 +4,7 @@ import "./App.css";
 import { HuePicker as Huell } from "react-color";
 
 function App() {
-  const [color, setColor] = useState("ff0 17%");
+  const [hue, setHue] = useState("ff0 17%");
 
   return (
     <React.Fragment>
@@ -17,14 +17,14 @@ function App() {
         <li>User deletion</li>
         <li>Pick colors</li>
         <li>Add them to collections</li>
-        <li>{color}</li>
+        <li>{hue}</li>
       </ol>
       <div className="hue-hold">
         <Huell
           direction="vertical"
           width="16px"
           height="200px"
-          onChangeComplete={() => setColor(color)}
+          onChangeComplete={color => setHue(color.hex)}
         />
       </div>
     </React.Fragment>
