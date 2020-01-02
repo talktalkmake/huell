@@ -1,12 +1,13 @@
-.hue-hold {
-  width: 10px;
-  height: 300px;
-  position: relative;
+.hold-hue {
+  width: 2rem;
+  height: 15rem;
+  position: absolute;
 }
 
 .huell {
-  width: 200px;
-  height: 200px;
+  margin-left: 2rem;
+  width: 15rem;
+  height: 15rem;
   position: relative;
 }
 .huell p {
@@ -22,6 +23,6 @@
 
 .g {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 4fr;
   padding: 2rem;
 }

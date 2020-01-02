@@ -1,4 +1,19 @@
+## What is Huell and what does it do?
+
+1. User registration
+2. User login
+3. User logout
+4. User deletion
+5. Pick colors
+6. Add them to collections
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+## Dependencies
+
+1. http://casesandberg.github.io/react-color/#api-individual
+2. https://github.com/casesandberg/react-color
+3. https://www.npmjs.com/package/react-color
 
 ## Available Scripts
 
