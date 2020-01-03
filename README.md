@@ -1,11 +1,20 @@
-## What is Huell and what does it do?
+## What's next?
 
-1. User registration
-2. User login
-3. User logout
-4. User deletion
-5. Pick colors
-6. Add them to collections
+### To do
+
+| Task              | Size |
+| ----------------- | ---- |
+| User registration | L    |
+| User login        | M    |
+| User logout       | M    |
+| User delete       | M    |
+
+### Completed tasks
+
+| Task                      | Size |
+| ------------------------- | ---- |
+| Pick a color              | M    |
+| Add color to a collection | S    |
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
