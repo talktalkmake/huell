@@ -11,10 +11,11 @@
 
 ### Completed tasks
 
-| Task                      | Size |
-| ------------------------- | ---- |
-| Pick a color              | M    |
-| Add color to a collection | S    |
+| Task                          | Size |
+| -------------------------     | ---- |
+| Pick a color                  | M    |
+| Add color to a collection     | S    |
+| Test basic route for backend  | S    |
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
@@ -23,12 +24,19 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 1. http://casesandberg.github.io/react-color/#api-individual
 2. https://github.com/casesandberg/react-color
 3. https://www.npmjs.com/package/react-color
+4. https://www.npmjs.com/package/nodemon automatically restarting the node server when it changes
+5. https://www.npmjs.com/package/npm-run-all for running multiple npm scripts at the same time
 
 ## Available Scripts
 
 In the project directory, you can run:
 
-### `npm start`
+### `npm run dev`
+
+Runs both the node server and react frontend together.
+Node js server will run in the development mode on port 3001.
+
+### `npm start` -> not needed when running `npm run dev`
 
 Runs the app in the development mode.<br />
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
