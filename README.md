@@ -35,6 +35,16 @@ In the project directory, you can run:
 
 Runs both the node server and react frontend together.
 Node js server will run in the development mode on port 3001.
+To test just server connection, you can run ```node server --exec nodemon```
+
+### psql
+Create local database: ```createdb huelldb```
+
+Connect to local db: ```psql -d huelldb```
+
+To test, copy into psql:
+```INSERT INTO users (email)```
+```VALUES ('test@test.com');```
 
 ### `npm start` -> not needed when running `npm run dev`
 
