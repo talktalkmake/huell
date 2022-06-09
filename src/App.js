@@ -1,44 +1,40 @@
 import React, { useState } from "react";
-import "./App.css";
+import './index.css';
 
-import { HuePicker as Huell } from "react-color";
+import { SketchPicker as Huell } from "react-color";
 
 function App() {
   const [hue, setHue] = useState(["#0075ff"]);
   const [collection, setCollection] = useState(hue);
 
   return (
-    <React.Fragment>
-      <div className="g">
-        <div className="h">
-          <h3 className="App">Huell</h3>
-        </div>
-        <div className="h">
-          <div className="hold-hue">
-            <Huell
-              color={hue}
-              direction="vertical"
-              width="2rem"
-              height="15rem"
-              onChangeComplete={color => setHue(color.hex)}
-            />
-          </div>
-          <div className="huell" style={{ backgroundColor: hue }}>
-            <p>{hue}</p>
-          </div>
-          <button
-            className="add-color"
-            onClick={color => setCollection([...collection, hue])}
-          >
-            Add Color
-          </button>
-          <hr />
-          {collection.map(e => (
-            <div style={{ backgroundColor: e }}>{e}</div>
-          ))}
-        </div>
+    <div className="flex">
+      <div className="h">
+        <h3 className="text-3xl font-bold underline">Huell</h3>
       </div>
-    </React.Fragment>
+      <div className="h">
+        <div className="hold-hue">
+          <Huell
+            color={hue}
+            direction="vertical"
+            onChangeComplete={color => setHue(color.hex)}
+          />
+        </div>
+        <div className="huell" style={{ backgroundColor: hue }}>
+          <p>{hue}</p>
+        </div>
+        <button
+          className="add-color"
+          onClick={color => setCollection([...collection, hue])}
+        >
+          Add Color
+        </button>
+        <hr />
+        {collection.map(e => (
+          <div style={{ backgroundColor: e }}>{e}</div>
+        ))}
+      </div>
+    </div>
   );
 }
 
